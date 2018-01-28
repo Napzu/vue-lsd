@@ -12,6 +12,10 @@
     "localStorage",
     "instance"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Napzu/vue-lsd.git"
+  },
   "author": "Markus Olkinuora <markus.olkinuora@gmail.com>",
   "license": "ISC"
 }
