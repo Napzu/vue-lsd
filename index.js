@@ -3,7 +3,7 @@
     typeof define === 'function' && define.amd ? define(factory) :
     (global.vueLocalStorageData = factory());
 }(this, (function () { 'use strict';
-    var vueLocalStorageData = {
+    var lsd = {
         install(Vue, o) {
             var timeouts = {}, opts = { prefix: 'vueLocalStorageData_', throttle: 500 }
             if (o !== null && typeof o === 'object') Object.keys(o).forEach(function (k) { opts[k] = o[k] })
@@ -32,5 +32,6 @@
             })
         }
     }
-    return vueLocalStorageData
+    if ( this.vueLocalStorageData ) Vue.use(lsd)
+    return lsd
 })));
