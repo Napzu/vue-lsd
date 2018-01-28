@@ -14,6 +14,7 @@ npm install vue-lsd
 If you want just quickly use it in browser:
 ```
 <script src="https://unpkg.com/vue-lsd"></script>
+<script>Vue.use(vueLocalStorageData)</script>
 ```
 ## Usage
 

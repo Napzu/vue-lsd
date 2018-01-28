@@ -1,7 +1,7 @@
 (function (global, factory) {
     typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
     typeof define === 'function' && define.amd ? define(factory) :
-    (global.vueLocalStorageData = factory(), Vue.use(global.vueLocalStorageData));
+    ( global.vueLocalStorageData = factory() );
 }(this, (function () { 'use strict';
     var lsd = {
         install(Vue, o) {
