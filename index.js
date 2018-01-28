@@ -32,6 +32,5 @@
             })
         }
     }
-    if ( global.vueLocalStorageData ) Vue.use(lsd)
     return lsd
 })));
