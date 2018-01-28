@@ -11,6 +11,10 @@ Usage npm:
 ```
 npm install vue-lsd
 ```
+If you want just quickly use it in browser:
+```
+<script src="https://unpkg.com/vue-lsd"></script>
+```
 ## Usage
 
 ```javascript
