@@ -4,7 +4,7 @@ Vue-lsd is vue plugin to make saving vue instance data to localStorage.
 `localStorageData()` works exatcly same like vue normal `data()` except everything is saved between page reloads like magic!
 
 ##DEMO
-[TRY IT OUT](https://codepen.io/Napzu/full/ddbZyv/)
+ [TRY IT OUT](https://codepen.io/Napzu/full/ddbZyv/)
 
 ## Install
 Usage npm:
