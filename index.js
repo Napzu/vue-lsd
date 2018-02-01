@@ -10,6 +10,7 @@
             Vue.mixin({
                 data() {
                     var vm = this, data = {}, lsd = this.$options.localStorageData
+                    if ( typeof localStorage == 'undefined' ) return lsd
                     if ( typeof lsd === 'undefined' ) return data
                     if ( typeof lsd === 'function'  ) lsd = lsd();
                     if ( lsd !== null && typeof lsd == 'object' ) {
