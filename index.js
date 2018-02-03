@@ -4,11 +4,11 @@
     ( global.vueLocalStorageData = factory() );
 }(this, (function () { 'use strict';
     var LSD = {
-        install(Vue, o) {
+        install: function(Vue, o) {
             var timeouts = {}, opts = { prefix: 'vueLocalStorageData_', throttle: 500 }
             if (o !== null && typeof o === 'object') Object.keys(o).forEach(function (k) { opts[k] = o[k] })
             Vue.mixin({
-                data() {
+                data: function() {
                     var vm = this, data = {}, lsd = this.$options.localStorageData
                     if ( typeof lsd === 'undefined' ) return data
                     if ( typeof localStorage == 'undefined' ) return lsd
