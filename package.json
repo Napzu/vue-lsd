@@ -1,6 +1,6 @@
 {
   "name": "vue-lsd",
-  "version": "1.0.38",
+  "version": "1.0.39",
   "description": "Plugin to sync vue instance data to localStorage",
   "main": "index.js",
   "scripts": {
