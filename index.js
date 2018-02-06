@@ -9,9 +9,9 @@
             if (o !== null && typeof o === 'object') Object.keys(o).forEach(function (k) { opts[k] = o[k] })
             Vue.mixin({
                 data: function() {
-                    var vm = this, data = {}, lsd = this.$options.localStorageData
+                    var vm = this, data = {}, lsd = this.$options.localStorageData, isNode = new Function("try{return this===global}catch(){return false}");
                     if ( typeof lsd === 'undefined' ) return data
-                    if ( typeof global.localStorage == 'undefined' ) return lsd
+                    if ( isNode ) return lsd
                     if ( typeof lsd === 'function' ) lsd = lsd();
                     if ( lsd !== null && typeof lsd == 'object' ) {
                         Object.keys(lsd).forEach(function (k) {
